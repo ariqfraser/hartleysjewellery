@@ -1,0 +1,65 @@
+
+
+.hero-blob {
+    position: absolute;
+    top: -5em;
+    left: -5em;
+}
+
+.hero-bubble {
+    position: absolute;
+}
+
+.hero-recycle {
+    position: absolute;
+    right: 0%;
+    bottom: -20%;
+}
+
+.hero-circle {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #85D194;
+    bottom: -20%;
+    left: 30%;
+}
+
+.gallery-ghost {
+    position: absolute;
+    right: 10%;
+    top: 20%;
+}
+
+.gallery-photo {
+    position: absolute;
+    bottom: 2%;
+    left: 40%;
+}
+
+.gallery-camera {
+    position: absolute;
+    right: 15%;
+    bottom: 3%
+}
+
+.gallery-blob {
+    position: absolute;
+    left: 5%;
+    transform: scale(0.9);
+}
+
+.footer-rings {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+
+.footer-blob {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    transform: scale(0.8);
+}

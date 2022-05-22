@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&family=Rubik:ital,wght@0,700;1,900&display=swap');
+
+// Colour Variables
+
+$bg-green: linear-gradient(90deg, #B4E6BE 0%, #85D194 100%);
+$bg-yellow: #FFEFC8;
+$bg-purple: linear-gradient(90deg, #816EF5 0%, #A496FA 100%);
+$acc-yellow: #FFFB93;
+$acc-green:  #93FF9D;
+$acc-pink: #FF93FB;
+$acc-beige: #FFEFC8;
+$acc-hotpink:  #F36FFF;
+$acc-orange: #FFAB6F;
+
+// Mixins
+
+@mixin font700 {
+  font-family: 'Plus Jakarta Sans', serif;
+  font-weight: 700;
+  color: #000000;
+}
+
+@mixin font400 {
+  font-family: 'Plus Jakarta Sans', serif;
+  font-weight: 400;
+  color: #000000;
+}
+
+@mixin margin {
+  width: min(95%, 1400px);
+  margin-inline: auto;
+}
+
+// Default Styles
+
+
+body {
+  background: $bg-green;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+p {
+  @include font400();
+  font-size: 1.2em;
+  span {
+    @include font700();
+  }
+}
+
+h2 {
+  @include font700(); 
+  font-size: 1.5em; 
+  text-transform: uppercase;
+}
+
+.font700 {@include font700;}
+
+// Track
+
+::-webkit-scrollbar {
+  width: 0px;
+  
+}
+
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background-color: $acc-hotpink;
+  border-radius: 3em;
+  transition: all 200ms ease;
+  border: 2px solid white;
+  position: relative;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
